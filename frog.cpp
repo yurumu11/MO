@@ -14,7 +14,7 @@ int main()
 
 	for(int i = 1; i <= E; i++) tf[i] = false;
 	
-	while(stone[h1] != 0) //проверка на наличие камня
+	while(stone[h1] != 0) // РїСЂРѕРІРµСЂРєР° РЅР° РЅР°Р»РёС‡РёРµ РєР°РјРЅСЏ
 	{
 		tf[stone[h1]] = true; 
 		h1++;
@@ -29,7 +29,7 @@ int main()
 	int max1 = 0;
 	int h2 = 0;
 	int pos1 = 0, pos2 = 0;
-	for(int i = 1; i < E; i++) // поиск всех возможных шагов
+	for(int i = 1; i < E; i++) // РїРѕРёСЃРє РІСЃРµС… РІРѕР·РјРѕР¶РЅС‹С… С€Р°РіРѕРІ
 	{
 		for(int j = 1; j <= N; j++)
 		{
@@ -73,7 +73,7 @@ int main()
 	int num = last;
 	int leng = step;
 
-	while(num > 0) // поиск пути
+	while(num > 0) // РїРѕРёСЃРє РїСѓС‚Рё
 	{
 		for(int j = 0; j < 3; j++)
 		{
@@ -95,7 +95,7 @@ int main()
 
 	way[1] = 1;
 	way2[1][1] = 1;
-	//вывод
+	//РІС‹РІРѕРґ
 	printf("       ");
 	for(int i = 1; i <= E; i++)
 		if(tf[i] == true) printf("    X", tf[i]); else printf("    .", tf[i]);
@@ -138,7 +138,7 @@ int main()
 		}
 		printf("\n");
 	}
-	printf("\n\tПуть : ");
+	printf("\n\tГЏГіГІГј : ");
 	for(int i = 0; i < E; i++)
 	{
 	
